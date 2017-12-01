@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<%= stylesheet_link_tag "SubmitQuestion" %>
+	<title>
+		Submit A Question
+	</title>
+</head>
+<body>
+	<header>
+		<h3 class="welcomeback"> Welcome back <%= @username %>  </h3>
+		<img class="KclLogoHeader" src="assets/KCLLogo.png">
+	</header>
+
+	<h3>Please fill up the form</h3>
+
+	<div class="container">
+	  <form action="/action_page.php">
+	    <label for="fname">Title</label>
+	    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+	    <label for="subject">Content</label>
+	    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+		<button class="button button1">Submit</button>
+		<button class="button button2">Cancel</button>
+	  </form>
+	</div>
+</body>
+</html>
